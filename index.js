@@ -1,18 +1,14 @@
 
-module.exports.generateRangeBelow = generateRangeBelow;
+module.exports.generateRangeBelow = Map;
 
 
 
-function generateRangeBelow(N){ // generate range from 1 to N
-    if(N<=1){
-        return 0
-    }
-    if(N % 1 !== 0){ // N must be integer
-        return 0
-    }
-    return Array.apply(null, {length: N}).map(Number.call, Number)
+function Map(N){ // generate range from 1 to N
+  return N
 }
 
 
 
-console.log(generateRangeBelow(40));
+console.log(Map(40));
+
+
