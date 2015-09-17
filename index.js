@@ -1,14 +1,8 @@
 
 module.exports.generateRangeBelow = Map;
+var server = require("./server.js");
 
+server.start();
 
-
-function Map(N){ // generate range from 1 to N
-  return N
-}
-
-
-
-console.log(Map(40));
 
 
